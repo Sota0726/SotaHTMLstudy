@@ -1,0 +1,111 @@
+html{
+}
+
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    height: 35px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    opacity: 0.8;
+}
+.header-icon{
+    font-weight: bold;
+    font-size:20px;
+    color:white;
+    float: left;
+}
+
+.header-name{
+    font-weight: bold;
+    color:white;
+    font-size: 20px;
+    float: right;
+}
+
+header a{
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+
+.contents{
+    width:80%;
+    margin:0 auto;
+}
+
+.top{
+    width:100%;
+    height:500px;
+    float: left;
+    background-image: url(./image/5.JPG);
+    background-size: cover;
+}
+
+.top-icon{
+    padding-left:30px;
+    color:white;
+    position: absolute;
+    bottom: 100;
+}
+
+.top-icon img{
+    border:5px solid white;
+    border-radius: 50%;
+}
+
+.intro{
+    width: 70%;
+    
+}
+
+.ed-background{
+    padding: 15px 10px;
+    margin-right: 50px;
+    background-color: White;
+    width:35%;
+    float: right;
+    color: dimgrey;
+    float :left;
+    border-radius: 15px;
+}
+
+.ed-background p{
+    
+    font-size:15px;
+    
+}
+
+.skills{
+    padding-top:15px;
+    color: dimgray;
+    background-color: white;
+    float :left;
+    border-radius: 15px;
+}
+
+.skills img{
+    padding:20px 0px;
+}
+
+.music{
+    width:30%;
+    float:right;
+    color: dimgray;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.music h2,h4,img{
+    padding-left:10px;
+}
