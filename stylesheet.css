@@ -107,15 +107,21 @@ header a{
 }
 
 #map{
+    margin-top: 5px;
     margin-left: 10px;
     width: 300px;
-    height: 300px;
+    height: 400px;
     float: left;
 }
 
+.contact-form input{
+    width: 400px;
+}
 #message-form{
     height : 60px;
 }
+
+
 
 .music{
     width:30%;
