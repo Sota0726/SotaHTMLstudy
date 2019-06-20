@@ -5,8 +5,24 @@
   <head>
     <meta charset="utf-8">
     <title>Sota Profile</title>
-    <script type = "text/javascript" src = "/jquery-3.4.1.min.js"></script>
-    <script src="/script.js"></script>
+    <script type = "text/javascript" src = "jquery-3.4.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_TZh1PnYO4qCIorWtV7FYIEQUIo-bhrQ"></script>
+    <script src="gmaps.js"></script>
+    <script type = "text/javascript" >
+     $(function(){
+        $('#datepicker').datepicker();
+        map = new GMaps({
+ 	        div: '#map', //地図を表示する要素
+ 	        lat: 34.680913, //緯度
+ 	        lng: 135.497557, //軽度
+ 	        zoom: 18 //倍率（1～21）
+});
+    });
+
+    
+    </script>
 
   </head>
   <body>
@@ -34,17 +50,24 @@
                 <p>04/2019 Enter in Osaka Univercity Master Corce </p>
             </div>
 
-            <div class = "skills">
+            <div class = "contact-form">
+                <h4>問い合わせ</h4>
+                <p>Date</p>
+                <input type = "text" id = "datepicker">
+                <p>Message</p>
+                <input type = "text" id = "message-form">
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <div class = "skills">
                 <h4>My skills</h4>
                 <img  class = "Prog-icon" src="./image/HTMLicon.png" height ="20%">
                 <img  class = "Prog-icon" src="./image/Pythonicon.png" height="20%">
                 <img  class = "Prog-icon" src="./image/Cicon.jpg" height="20%">
+                <img  class = "Prog-icon" src="./image/JSicon.jpg" height="20%">
             </div>
-        </div>
-
-        <div>
-            <input type = "text" id = "datepicker">
-        </div>
 
         <div class = "music">
             <h2>My Anthems</h2>

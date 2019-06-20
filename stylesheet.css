@@ -72,7 +72,7 @@ header a{
     margin-right: 50px;
     background-color: White;
     width:35%;
-    float: right;
+    
     color: dimgrey;
     float :left;
     border-radius: 15px;
@@ -85,15 +85,36 @@ header a{
 }
 
 .skills{
-    padding-top:15px;
+    padding-top:5px;
     color: dimgray;
     background-color: white;
-    float :left;
+    
     border-radius: 15px;
 }
 
 .skills img{
     padding:20px 0px;
+}
+
+.contact-form{
+    background-color: cornflowerblue;
+    padding: 5px 30px;
+    margin-top: 5pt;
+    margin-left: 0px;
+    width:50%;
+    float: left;
+    border-radius: 15px;
+}
+
+#map{
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#message-form{
+    height : 60px;
 }
 
 .music{
