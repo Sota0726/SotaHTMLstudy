@@ -18,7 +18,7 @@
  	        lat: 34.680913, //緯度
  	        lng: 135.497557, //軽度
  	        zoom: 18 //倍率（1～21）
-});
+        });
     });
 
     
@@ -51,19 +51,23 @@
             </div>
 
 
-            <form action="" method="post">
+            <form action="cgi-bin/contact.py" method="post" accept-charset="UTF-8">
                 <div class = "contact-form">
-                    <h4>Contact</h4>
+                    
+                    <!--
                     <p>Name</p>
-                    <input type = "text" id = "Name-form">
+                    <input type = "text" id = "Name-form" name = "yourName">
                     <p>E-mail</p>
-                    <input type = "email" id = "Email-form">
+                    <input type = "email" id = "Email-form" name = "yourEmail">
                     <p>Date</p>
-                    <input type = "text" id = "datepicker">
+                    <input type = "text" id = "datepicker" name = "inputDate">
+                    -->
                     <p>Message</p>
-                    <input type = "text" id = "message-form">
+                    <input type = "text" id = "message-form" name = "yourMessage">
                     <p></p>
                     <input type="submit" value="Submit" id = "submit-form">
+                    
+                    
                 </div>
             </form>
             
