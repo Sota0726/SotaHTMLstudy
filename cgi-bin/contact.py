@@ -6,7 +6,7 @@ html_body = """
 <!DOCTYPE html>
 <html>
 <head>
-<title>受信したデータを表示</title>
+<title>send message</title>
 <style>
 h1 {
 font-size: 3em;
@@ -14,12 +14,23 @@ font-size: 3em;
 </style>
 </head>
 <body>
-<h1>%s</h1>
+<p>Name</p>
+<p>%s</p>
+<p>E-mail</p>
+<p>%s</p>
+<p>Date</p>
+<p>%s</p>
+<p>Message</p>
+<p>%s</p>
 </body>
 </html>
 """
 
 form = cgi.FieldStorage()
-text = form.getvalue('yourMessage','')
+Nametext = form.getvalue('yourName','')
+Emailtext = form.getvalue('yourEmail','')
+Datetext = form.getvalue('inputDate','')
+Messagetext = form.getvalue('yourMessage','')
 
-print(html_body % (text))
+
+print(html_body % (Nametext,Emailtext,Datetext,Messagetext))
